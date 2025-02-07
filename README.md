@@ -1,43 +1,43 @@
-# Prosty Klient Poczty
+# Simple Email Client
 
-Prosty klient poczty e-mail stworzony w Pythonie z wykorzystaniem biblioteki Tkinter do interfejsu graficznego. Aplikacja obsługuje podstawowe funkcje związane z zarządzaniem pocztą e-mail, w tym logowanie, wysyłanie wiadomości, przeglądanie skrzynki odbiorczej oraz automatyczne odpowiadanie na odczytane wiadomości.
+A simple email client developed in Python using the Tkinter library for the graphical user interface. The application supports basic email management functions, including login, sending emails, viewing the inbox, and automatically replying to read messages.
 
-## Zakres Projektu
+## Project Scope
 
-Aplikacja została zaprojektowana z myślą o prostocie obsługi oraz czytelnym interfejsie. Projekt obejmuje:
+The application is designed with ease of use and a clean interface in mind. The project includes:
 
-- **Logowanie do konta Gmail**: uwzględniono obsługę bezpiecznego połączenia z serwerem SMTP i IMAP.
-- **Wysyłanie wiadomości e-mail**: możliwość wysyłania wiadomości do dowolnego odbiorcy z poziomu interfejsu aplikacji.
-- **Przeglądanie skrzynki odbiorczej**: lista wiadomości wyświetlana w przejrzysty sposób z opcją filtrowania po słowie kluczowym.
-- **Odczytywanie wiadomości**: szczegóły wiadomości (nadawca, temat, treść) wyświetlane w osobnym oknie.
-- **Automatyczne odpowiadanie na wiadomości**: po odczytaniu wiadomości aplikacja automatycznie wysyła odpowiedź z informacją o przeczytaniu wiadomości.
+- **Gmail Account Login:** Secure connection handling with SMTP and IMAP servers.  
+- **Sending Emails:** Ability to send messages to any recipient directly from the application interface.  
+- **Inbox Browsing:** Displaying emails in an organized list with keyword filtering options.  
+- **Reading Emails:** Detailed view of each message, including sender, subject, and content.  
+- **Automatic Replies:** After reading an email, the application automatically sends a reply confirming the message has been read.
 
-## Kluczowe Funkcjonalności
+## Key Features
 
-- **Bezpieczne połączenie**: wykorzystanie protokołów SSL/TLS dla połączeń SMTP i IMAP.
-- **Interfejs graficzny**: intuicyjny GUI zbudowany w oparciu o Tkinter.
-- **Obsługa filtrów**: możliwość wyszukiwania wiadomości po słowie kluczowym w tytule lub treści.
-- **Automatyzacja**: automatyczne generowanie odpowiedzi po odczytaniu wiadomości, co pozwala na szybkie potwierdzenie odbioru e-maili.
-- **Obsługa błędów**: zaimplementowane podstawowe mechanizmy obsługi błędów przy logowaniu, wysyłaniu wiadomości oraz połączeniu z serwerami pocztowymi.
+- **Secure Connection:** SSL/TLS protocols are used for secure SMTP and IMAP communication.  
+- **Graphical User Interface (GUI):** Intuitive design built with Tkinter for easy navigation.  
+- **Email Filtering:** Search functionality to filter emails based on keywords in the subject or body.  
+- **Automation:** Automatic reply generation after reading emails, ensuring quick acknowledgment of received messages.  
+- **Error Handling:** Basic error management for login failures, sending issues, and connection problems with mail servers.
 
-## Struktura Aplikacji
+## Application Structure
 
-- **Interfejs użytkownika (GUI)**: pola logowania, formularz do tworzenia wiadomości, lista wiadomości odbiorczych, osobne okna do podglądu wiadomości.
-- **Logika aplikacji**: obsługa połączeń SMTP i IMAP, zarządzanie sesją logowania, automatyczne odpowiedzi.
-- **Bezpieczeństwo**: dane logowania przesyłane przez bezpieczne połączenie, bez lokalnego zapisu danych wrażliwych.
+- **User Interface (GUI):** Login fields, email composition form, inbox list, and separate windows for viewing email details.  
+- **Application Logic:** Handles SMTP/IMAP connections, manages login sessions, and automates replies.  
+- **Security:** Secure transmission of login credentials with no local storage of sensitive data.
 
-## Przykład Działania
+## Example Workflow
 
-1. Użytkownik loguje się do konta Gmail, podając adres e-mail i hasło.
-2. Po zalogowaniu wyświetlana jest lista najnowszych wiadomości e-mail.
-3. Kliknięcie przycisku **Odczytaj** otwiera nowe okno z treścią wiadomości.
-4. Po odczytaniu wiadomości automatycznie generowana jest odpowiedź do nadawcy z potwierdzeniem odbioru.
+1. The user logs into their Gmail account by providing an email address and password.  
+2. After logging in, the latest emails are displayed in an inbox list.  
+3. Clicking the **Read** button opens a new window with the full message content.  
+4. Upon reading the message, an automatic reply is generated and sent to the sender, confirming receipt.
 
-## Technologie
+## Technologies Used
 
-- **Python 3.x**
-- **Tkinter** – interfejs graficzny
-- **smtplib** – obsługa wysyłania wiadomości (SMTP)
-- **imaplib** – obsługa pobierania wiadomości (IMAP)
-- **email** – parsowanie i tworzenie wiadomości e-mail
+- **Python 3.x**  
+- **Tkinter** – Graphical User Interface  
+- **smtplib** – Handling email sending (SMTP)  
+- **imaplib** – Retrieving emails (IMAP)  
+- **email** – Parsing and creating email messages  
 
