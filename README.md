@@ -41,6 +41,3 @@ Aplikacja została zaprojektowana z myślą o prostocie obsługi oraz czytelnym 
 - **imaplib** – obsługa pobierania wiadomości (IMAP)
 - **email** – parsowanie i tworzenie wiadomości e-mail
 
-## Podsumowanie
-
-Projekt stanowi kompletną aplikację do obsługi podstawowych funkcji poczty e-mail, z naciskiem na prostotę obsługi, automatyzację oraz bezpieczeństwo połączeń. Dzięki implementacji zarówno części frontendowej (GUI), jak i backendowej (logika połączeń i automatyzacja), projekt demonstruje umiejętności z zakresu programowania w Pythonie oraz pracy z protokołami sieciowymi.  
